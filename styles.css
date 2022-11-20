@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 3rem;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 5rem;
+  font-size: 1.1rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #023047;
+}
+
+.link-item {
+  position: relative;
+}
+
+/* Absolute position removes the element from the document flow to avoid unnecessary shifting of elements below the links when animation is active */
+.active-link {
+  height: 0.2rem;
+  background-color: #ffb703;
+  position: absolute;
+  left: 0;
+  bottom: -0.4rem;
+  width: 100%;
+}
